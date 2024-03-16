@@ -1,4 +1,4 @@
-<?php
+   <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
@@ -30,3 +30,4 @@
         echo "There was a problem with your submission, please try again.";
     }
 ?>
+
